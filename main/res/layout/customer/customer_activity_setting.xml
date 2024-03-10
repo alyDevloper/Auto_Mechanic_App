@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4777ca"
+    tools:context=".CustomerSettingActivity"
+    android:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/imageView_profile_dp"
+        android:layout_width="123dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/user_display_picture2"
+        android:background="@drawable/circle_backgound"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customer_status"
+        android:layout_width="178dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_profile_dp"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/imageView_profile_dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_profile_dp"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/customer_profile_back"
+        android:layout_width="22dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:padding="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/cust_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="#8e8e8e"
+            android:textColorHint="#8e8e8e"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/text22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cust_profile_name" />
+
+        <EditText
+            android:id="@+id/cust_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#8e8e8e"
+            android:textColorHint="#8e8e8e"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/text22"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/text22"
+            app:layout_constraintTop_toBottomOf="@+id/text22" />
+
+        <TextView
+            android:id="@+id/text33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cust_profile_email" />
+
+        <EditText
+            android:id="@+id/cust_profile_passkey"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_background"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Your Password"
+            android:inputType="text|textPassword"
+            android:padding="10dp"
+            android:textColor="#8e8e8e"
+            android:textColorHint="#8e8e8e"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/text33"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text33"
+            app:layout_constraintTop_toBottomOf="@+id/text33" />
+
+        <ToggleButton
+            android:id="@+id/togglePasswordVisibility"
+            android:layout_width="51dp"
+            android:layout_height="44dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:button="@drawable/eye_visibility"
+            android:contentDescription="Toggle Password Visibility"
+            android:gravity="center"
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="@+id/cust_profile_passkey"
+            app:layout_constraintEnd_toEndOf="@+id/cust_profile_passkey"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/cust_profile_passkey"
+            app:layout_constraintTop_toTopOf="@+id/cust_profile_passkey"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/update_info_cust"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/orange_btn_background"
+            android:text="Update"
+            android:textAllCaps="true"
+            android:textColor="#ffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/cust_profile_passkey"
+            app:layout_constraintStart_toStartOf="@+id/cust_profile_passkey"
+            app:layout_constraintTop_toBottomOf="@+id/cust_profile_passkey" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

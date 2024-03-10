@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f3"
+    tools:context=".CustModule"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/customer_nav_view"
+        app:headerLayout="@layout/activity_cust_header"
+        app:menu="@menu/activity_customer_menu"
+        android:layout_gravity="start"
+        android:background="#4777ca"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/purple_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/driver_status"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/our_services"
+            android:textAlignment="center"
+            android:textColor="#FFFEFE"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4777ca"
+        android:theme="@style/AppTheme"
+        app:titleTextColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginBottom="5dp"
+        app:title="Toolbars"
+        app:titleMarginStart="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/mechi"
+        android:layout_width="138dp"
+        android:layout_height="130dp"
+        android:background="#f1f1f3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:srcCompat="@drawable/desk_mech"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/tow"
+        android:layout_width="138dp"
+        android:layout_height="130dp"
+        android:background="#f1f1f3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
+        app:srcCompat="@drawable/rocket"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/text_tow"
+        android:layout_width="116dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto"
+        android:text="Towing"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tow"
+        app:layout_constraintStart_toStartOf="@+id/tow"
+        app:layout_constraintTop_toBottomOf="@+id/tow" />
+
+
+    <ImageButton
+        android:id="@+id/elect"
+        android:layout_width="138dp"
+        android:layout_height="130dp"
+        android:background="#f1f1f3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356"
+        app:srcCompat="@drawable/electric"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="129dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto"
+        android:text="Mechanical"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mechi"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="@+id/mechi"
+        app:layout_constraintTop_toBottomOf="@+id/mechi" />
+
+    <ImageButton
+        android:id="@+id/fuel"
+        android:layout_width="138dp"
+        android:layout_height="130dp"
+        android:background="#f1f1f3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688"
+        app:srcCompat="@drawable/petrol"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/text_fuel"
+        android:layout_width="116dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto"
+        android:text="Out Of Fuel"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/fuel"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="@+id/fuel"
+        app:layout_constraintTop_toBottomOf="@+id/fuel" />
+
+    <TextView
+        android:id="@+id/text_elec"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto"
+        android:text="Electrial"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/elect"
+        app:layout_constraintStart_toStartOf="@+id/elect"
+        app:layout_constraintTop_toBottomOf="@+id/elect" />
+
+    <Button
+        android:id="@+id/lgout"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/orange_btn_background"
+        android:fontFamily="@font/roboto"
+        android:text="Logout"
+        android:textAllCaps="true"
+        android:textColor="#FFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

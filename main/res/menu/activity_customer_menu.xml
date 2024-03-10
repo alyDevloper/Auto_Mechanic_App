@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#4777ca"> <!-- Change background color here -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/customer_home"
+            android:icon="@drawable/customer_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/customer_profile"
+            android:icon="@drawable/account_pic"
+            android:title="My Profile" />
+    </group>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f3"
+    tools:context=".MechanicModule"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/customer_nav_view"
+        app:headerLayout="@layout/activity_cust_header"
+        app:menu="@menu/activity_customer_menu"
+        android:layout_gravity="start"
+        android:background="#4777ca"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/purple_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/AppTheme">
+
+            <TextView
+                android:id="@+id/driver_status"
+                android:layout_width="311dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="106dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="106dp"
+                android:text="Get Customer Requests"
+                android:textAlignment="center"
+                android:textColor="#FFFEFE"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck"
+                android:theme="@style/AppTheme"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4777ca"
+            android:theme="@style/AppTheme"
+            app:titleTextColor="#ffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_goneMarginBottom="5dp"
+            app:title="Toolbars"
+            app:titleMarginStart="10dp" />
+
+
+        <ImageButton
+            android:id="@+id/get_request_btn"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:background="#f1f1f3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.356"
+            app:srcCompat="@drawable/desk_044"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="174dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/roboto"
+            android:text="Customer Request"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/get_request_btn"
+            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintStart_toStartOf="@+id/get_request_btn"
+            app:layout_constraintTop_toBottomOf="@+id/get_request_btn" />
+
+        <Button
+            android:id="@+id/module_mechanic_logut"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/orange_btn_background"
+            android:text="Logout"
+            android:textAllCaps="true"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/roboto"
+            app:layout_constraintVertical_bias="0.608" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#f1f1f3" /> <!-- Change the background color to your desired color -->
+    <corners android:bottomLeftRadius="21sp" android:bottomRightRadius="21sp" android:topRightRadius="21sp" android:topLeftRadius="21sp"/> <!-- Adjust the corner radius as needed -->
+
+    <stroke
+        android:width="3dp"/> <!-- Set the border width -->
+    android:color="#BDBDBD"/> <!-- Set the border color -->
+</shape>
